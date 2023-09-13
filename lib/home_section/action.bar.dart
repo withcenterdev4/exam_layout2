@@ -10,26 +10,23 @@ class TopBarAction extends StatelessWidget {
     return SizedBox(
       height: 20,
       width: 40,
-      child: InkWell(
-        onTap: () {},
-        child: Stack(
-          children: [
-            Icon(
-              Icons.maximize_outlined,
+      child: Stack(
+        children: [
+          Icon(
+            Icons.maximize_outlined,
+            color: Theme.of(context).shadowColor,
+            size: 40,
+          ),
+          Positioned(
+            top: -18,
+            left: 5,
+            child: Icon(
+              Icons.minimize_outlined,
               color: Theme.of(context).shadowColor,
               size: 40,
             ),
-            Positioned(
-              top: -18,
-              left: 5,
-              child: Icon(
-                Icons.minimize_outlined,
-                color: Theme.of(context).shadowColor,
-                size: 40,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

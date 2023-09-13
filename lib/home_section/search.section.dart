@@ -18,12 +18,15 @@ class SearchSection extends StatelessWidget {
           children: [
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.only(left: 40),
+                padding: const EdgeInsets.only(left: 30),
                 child: TextField(
                   decoration: InputDecoration(
                     border: InputBorder.none,
                     hintText: 'Search something...',
-                    hintStyle: Theme.of(context).textTheme.displaySmall,
+                    hintStyle:
+                        Theme.of(context).textTheme.displaySmall!.copyWith(
+                              fontSize: 13,
+                            ),
                   ),
                 ),
               ),

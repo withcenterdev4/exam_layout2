@@ -1,3 +1,4 @@
+import 'package:exam_layout2/places_section/body.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,7 +13,7 @@ ThemeData mainTheme = ThemeData(
   shadowColor: Colors.black,
   textTheme: TextTheme(
       titleLarge: GoogleFonts.yesevaOne(
-        fontSize: 40,
+        fontSize: 30,
         color: Colors.black,
       ),
       labelMedium: GoogleFonts.josefinSans(
@@ -28,7 +29,7 @@ ThemeData mainTheme = ThemeData(
       ),
       displaySmall: GoogleFonts.comfortaa(
         color: const Color(0xFF7F7F7F),
-        fontSize: 18,
+        fontSize: 15,
       ),
       displayMedium: GoogleFonts.montserrat(
         color: Colors.black,
@@ -55,16 +56,23 @@ class HomePage extends StatelessWidget {
               backgroundColor: Colors.green,
             ),
           ),
-          backgroundColor: Colors.white10,
+          backgroundColor: Theme.of(context).indicatorColor.withOpacity(0),
           elevation: 0,
-          toolbarHeight: 70,
-          actions: const [
+          toolbarHeight: 50,
+          actions: [
             Padding(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 right: 38,
                 top: 20,
               ),
-              child: TopBarAction(),
+              child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const MainBody()),
+                    );
+                  },
+                  child: const TopBarAction()),
             ),
           ],
         ),

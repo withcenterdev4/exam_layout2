@@ -22,5 +22,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  - assets/landpage.jpg
   - assets/land_page.jpg
+  - assets/lempuyang.jpg
+  - assets/eiffel.jpg

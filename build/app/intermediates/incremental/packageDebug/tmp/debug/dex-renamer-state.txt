@@ -1,4 +1,4 @@
-#Wed Sep 13 15:08:11 PST 2023
-base.0=C\:\\Users\\QCU\\Desktop\\exam_layout2\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Wed Sep 13 20:59:07 PST 2023
+base.0=/Users/ace/Desktop/trainee/layout2/exam_layout2/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

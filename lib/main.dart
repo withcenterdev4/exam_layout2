@@ -12,7 +12,7 @@ ThemeData mainTheme = ThemeData(
   shadowColor: const Color(0xFF00061D),
   textTheme: TextTheme(
     titleLarge: GoogleFonts.yesevaOne(
-      fontSize: 40,
+      fontSize: 32,
       color: Colors.white,
     ),
     labelMedium: GoogleFonts.josefinSans(

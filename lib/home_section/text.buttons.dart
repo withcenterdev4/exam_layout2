@@ -56,10 +56,11 @@ class _TextButtonsState extends State<TextButtons> {
                     color: activeIndex == index
                         ? Theme.of(context).primaryColor
                         : Theme.of(context).shadowColor,
+                    fontSize: 15,
                   ),
             ),
           ),
-          if (activeIndex == index) // Show the icon if active
+          if (activeIndex == index)
             Positioned(
               bottom: 0,
               child: Icon(
@@ -73,3 +74,12 @@ class _TextButtonsState extends State<TextButtons> {
     );
   }
 }
+
+// class TextButtonBuilder extends StatelessWidget {
+//   const TextButtonBuilder({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return ;
+//   }
+// }
