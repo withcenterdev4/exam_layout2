@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SearchSection extends StatelessWidget {
@@ -38,7 +39,10 @@ class SearchSection extends StatelessWidget {
                 ),
                 child: IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.search_outlined),
+                  icon: const Icon(
+                    CupertinoIcons.search,
+                    size: 20,
+                  ),
                   color: Theme.of(context).indicatorColor,
                 ),
               ),
