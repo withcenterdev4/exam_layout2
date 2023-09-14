@@ -50,11 +50,8 @@ class HomePage extends StatelessWidget {
       theme: mainTheme,
       home: Scaffold(
         appBar: AppBar(
-          title: const Padding(
-            padding: EdgeInsets.only(left: 25),
-            child: CircleAvatar(
-              backgroundColor: Colors.green,
-            ),
+          leading: const CircleAvatar(
+            foregroundImage: AssetImage("assets/profile1.jpeg"),
           ),
           backgroundColor: Theme.of(context).indicatorColor.withOpacity(0),
           elevation: 0,

@@ -25,7 +25,7 @@ class SearchSection extends StatelessWidget {
                     hintText: 'Search something...',
                     hintStyle:
                         Theme.of(context).textTheme.displaySmall!.copyWith(
-                              fontSize: 13,
+                              fontSize: 15,
                             ),
                   ),
                 ),

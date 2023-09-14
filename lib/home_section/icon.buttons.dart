@@ -35,8 +35,8 @@ class _IconButtonsState extends State<IconButtons> {
   Widget _buildIconButtons(
       BuildContext context, IconData? icon, int index, String? fontIcon) {
     return Container(
-      height: 60,
-      width: 60,
+      height: 70,
+      width: 70,
       decoration: BoxDecoration(
         color: activeIndex == index
             ? Theme.of(context).primaryColor
@@ -51,12 +51,14 @@ class _IconButtonsState extends State<IconButtons> {
                 color: activeIndex == index
                     ? Theme.of(context).indicatorColor
                     : Theme.of(context).primaryColor,
+                size: 30,
               )
             : Iconify(
                 fontIcon,
                 color: activeIndex == index
                     ? Theme.of(context).indicatorColor
                     : Theme.of(context).primaryColor,
+                size: 30,
               ),
       ),
     );

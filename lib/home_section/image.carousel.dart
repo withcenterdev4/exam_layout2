@@ -7,7 +7,7 @@ class ImageCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 270,
+      height: 280,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: const <Widget>[
@@ -21,7 +21,7 @@ class ImageCarousel extends StatelessWidget {
           ImageCard(
             assetPath: "assets/eiffel.jpg",
             title: "The Eiffel Tower",
-            location: "Francek",
+            location: "France",
           ),
           SizedBox(width: 25),
           ImageCard(
@@ -49,11 +49,10 @@ class ImageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 320,
-      width: 200,
+      height: 350,
+      width: 220,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        // gradient: LinearGradient(colors: Theme.of(context).shadowColor,),
         image: DecorationImage(
           image: AssetImage(assetPath),
           fit: BoxFit.fill,

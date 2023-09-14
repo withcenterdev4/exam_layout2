@@ -10,6 +10,7 @@ void main() {
 ThemeData mainTheme = ThemeData(
   primaryColor: const Color(0xFFF3707B),
   shadowColor: const Color(0xFF00061D),
+  indicatorColor: Colors.white,
   textTheme: TextTheme(
     titleLarge: GoogleFonts.yesevaOne(
       fontSize: 32,

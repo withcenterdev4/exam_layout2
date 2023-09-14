@@ -15,11 +15,11 @@ class HomeBody extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 40, left: 40, right: 40),
-            child: Container(
+            child: SizedBox(
               height: constraints.maxHeight / 2,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
                     'Discover \nworld with us!',
@@ -33,7 +33,6 @@ class HomeBody extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 20),
           const ImageCarousel(),
         ],
       );

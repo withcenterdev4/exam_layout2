@@ -69,14 +69,43 @@ class _LandingPageState extends State<LandingPage> {
                         },
                         child: Text(
                           'Sign in',
-                          style: Theme.of(context).textTheme.labelMedium,
+                          style:
+                              Theme.of(context).textTheme.labelMedium!.copyWith(
+                                    letterSpacing: -1,
+                                    fontSize: 18,
+                                  ),
                         ),
                       ),
                     ),
                   ),
-                  Text(
-                    'Create an account',
-                    style: Theme.of(context).textTheme.labelSmall,
+                  SizedBox(
+                    height: 22,
+                    width: 140,
+                    child: Stack(
+                      children: [
+                        Align(
+                          alignment: Alignment.bottomCenter,
+                          child: Container(
+                            height: 1,
+                            color: Theme.of(context).indicatorColor,
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.topCenter,
+                          child: Text(
+                            'Create an account',
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelSmall!
+                                .copyWith(
+                                  decoration: TextDecoration.none,
+                                  letterSpacing: -1,
+                                  fontSize: 16,
+                                ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(
                     height: 45,
